@@ -25,6 +25,7 @@ return {
   ['@label'] = { fg = pallet.off_white },
 
   ['@function.builtin'] = { fg = pallet.dark_green },
+  ['@function.macro'] = { fg = pallet.off_white },
   ['@constructor'] = { fg = pallet.dark_green },
 
   ['@keyword'] = { fg = pallet.yellow },
