@@ -1,9 +1,9 @@
 # Eye Cancer
 
 ## Motivation
-  * uses kanagawa dragon color scheme as a starting point
+  * I used kanagawa dragon color scheme as a starting point. It's a dependency.
   * I had Jonathan Blow's Emacs theme in mind when I made this, but I wasn't looking at it when I made the pallet, so...
-  * I couldn't find a good dark theme that wasn't monochrome or weird
+  * I couldn't find a good dark theme that wasn't monochrome or weird, so I made this weird thing.
   * I was using kanagawa, but it wasn't perfect and I was heavily modifying it in my config
   * I used a lot of the modifications to kanagawa-dragon as a starting point for this
   * I made this in a few hours and you may find it ugly. I don't care. It's for me.
@@ -22,7 +22,9 @@
 ```
   * other package managers
   ```lua
-    -- I have no idea probably use... or something
+    -- I have no idea, probably: 
+    use { 'i have eye cancer', } -- ... or something
+
     -- Why are you still using packer?
   ```
 
