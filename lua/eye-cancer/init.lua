@@ -2,7 +2,6 @@ M = {}
 
 local groups = require('eye-cancer.syntax')
 
-
 -- colors
 --- Adds a highlight for the group
 local function highlight(group, table)

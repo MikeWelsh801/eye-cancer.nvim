@@ -4,6 +4,6 @@ return {
   brown = '#907640',
   white = '#c8c8c0',
   off_white = '#959580',
-  grey = '#646563',
+  grey = '#949590',
   dark_green = '#659099',
 }
