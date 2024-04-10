@@ -14,12 +14,15 @@ return {
   Number = { fg = pallet.brown, },
   Boolean = { fg = pallet.brown, },
 
+  ['@string.escape'] = { fg = pallet.brown, },
+
   ['@variable'] = { fg = pallet.white },
   ['@variable.member'] = { fg = pallet.off_white },
   ['@variable.builtin'] = { fg = pallet.off_white },
   ['@character.special'] = { fg = pallet.off_white },
 
-  ['@type'] = { fg = pallet.off_white },
+
+  ['@type'] = { fg = pallet.grey },
   ['@constant'] = { fg = pallet.off_white },
   ['@constant.builtin'] = { fg = pallet.off_white },
   ['@label'] = { fg = pallet.off_white },
@@ -34,6 +37,7 @@ return {
   ['@field'] = { fg = pallet.yellow },
   ['@keyword.operator'] = { fg = pallet.yellow },
   ['@keyword.import'] = { fg = pallet.yellow },
+  ['@attribute'] = { fg = pallet.yellow },
   ['@keyword.return'] = { fg = pallet.yellow },
   ['@macro'] = { fg = pallet.yellow },
 }
