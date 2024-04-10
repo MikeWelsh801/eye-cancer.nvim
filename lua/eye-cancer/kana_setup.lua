@@ -44,6 +44,7 @@ require("kanagawa").setup({
 -- colors
 function ColorMyPencils(color)
   color = color or "kanagawa-dragon"
+  require('kanagawa').load('dragon')
   vim.cmd.colorschem(color)
 
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
