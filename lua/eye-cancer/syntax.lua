@@ -14,21 +14,22 @@ return {
   Number = { fg = pallet.brown, },
   Boolean = { fg = pallet.brown, },
 
-  ['@string.escape'] = { fg = pallet.brown, },
-
   ['@variable'] = { fg = pallet.white },
+
   ['@variable.member'] = { fg = pallet.off_white },
   ['@variable.builtin'] = { fg = pallet.off_white },
   ['@character.special'] = { fg = pallet.off_white },
-
-
-  ['@type'] = { fg = pallet.grey },
   ['@constant'] = { fg = pallet.off_white },
   ['@constant.builtin'] = { fg = pallet.off_white },
   ['@label'] = { fg = pallet.off_white },
+  ['@function.macro'] = { fg = pallet.off_white },
+  ['@tag.attribute'] = { fg = pallet.off_white },
+
+  ['@string.escape'] = { fg = pallet.brown, },
+
+  ['@type'] = { fg = pallet.grey },
 
   ['@function.builtin'] = { fg = pallet.dark_green },
-  ['@function.macro'] = { fg = pallet.off_white },
   ['@constructor'] = { fg = pallet.dark_green },
 
   ['@keyword'] = { fg = pallet.yellow },
@@ -39,7 +40,6 @@ return {
   ['@define'] = { fg = pallet.yellow },
   ['@preproc'] = { fg = pallet.yellow },
   ['@tag'] = { fg = pallet.yellow },
-  ['@tag.attribute'] = { fg = pallet.off_white },
   ['@field'] = { fg = pallet.yellow },
   ['@keyword.operator'] = { fg = pallet.yellow },
   ['@keyword.import'] = { fg = pallet.yellow },
