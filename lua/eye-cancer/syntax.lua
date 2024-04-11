@@ -32,6 +32,9 @@ return {
   ['@constructor'] = { fg = pallet.dark_green },
 
   ['@keyword'] = { fg = pallet.yellow },
+  ['@repeat'] = { fg = pallet.yellow },
+  ['@include'] = { fg = pallet.yellow },
+  ['@preproc'] = { fg = pallet.yellow },
   ['@tag'] = { fg = pallet.yellow },
   ['@tag.attribute'] = { fg = pallet.off_white },
   ['@field'] = { fg = pallet.yellow },
