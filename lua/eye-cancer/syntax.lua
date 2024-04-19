@@ -1,7 +1,7 @@
 local pallet = require('eye-cancer.pallet')
 
 return {
-  Comment = { fg = pallet.green, gui = 'bold,italic' },
+  Comment = { fg = pallet.dark_grey, gui = 'bold,italic' },
   String = { fg = pallet.green, gui = 'bold,italic' },
   Character = { fg = pallet.green, gui = 'bold,italic' },
   Keyword = { fg = pallet.yellow, gui = 'bold,italic' },
@@ -15,6 +15,7 @@ return {
   Boolean = { fg = pallet.brown, },
 
   ['@variable'] = { fg = pallet.white },
+  ['@comment'] = { fg = pallet.green, gui = 'bold,italic' },
 
   ['@variable.member'] = { fg = pallet.off_white },
   ['@variable.builtin'] = { fg = pallet.off_white },
