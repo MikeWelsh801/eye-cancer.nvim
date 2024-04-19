@@ -20,14 +20,18 @@ alt band album covers in the background.
 ## If you want eye cancer
   * using lazy
 ```lua
+  { 'MikeWelsh801/eye-cancer', dependencies = { 'rebelot/kanagawa.nvim' } }
+```
+  * if you want eye-cancer to be your default colorscheme
+```lua
   {
     'MikeWelsh801/eye-cancer',
     priority = 1000,
-    dependencies = { 'rebelot/kanagawa.nvim', name = 'kanagawa' },
-    config = function ()
-      require('eye-cancer').setup()
+    dependencies = { 'rebelot/kanagawa.nvim' },
+    config = function()
+      vim.cmd("colorscheme eye-cancer")
     end
-  },
+  }
 ```
   * other package managers
   ```lua
@@ -36,4 +40,12 @@ alt band album covers in the background.
 
     -- Why are you still using packer?
   ```
+
+## Usage
+```vim
+colorscheme eye-cancer
+```
+```lua
+vim.cmd("colorscheme eye-cancer")
+```
 
