@@ -2,10 +2,10 @@ local pallet = require('eye-cancer.pallet')
 
 return {
   Comment = { fg = pallet.dark_grey, gui = 'bold,italic' },
-  String = { fg = pallet.green, gui = 'bold,italic' },
-  Character = { fg = pallet.green, gui = 'bold,italic' },
+  String = { fg = pallet.dark_green, gui = 'bold,italic' },
+  Character = { fg = pallet.dark_green, gui = 'bold,italic' },
   Keyword = { fg = pallet.yellow, gui = 'bold,italic' },
-  Function = { fg = pallet.dark_green, },
+  Function = { fg = pallet.blue, },
   Literal = { fg = pallet.grey, },
   Operator = { fg = pallet.grey, },
   Variable = { fg = pallet.white, },
@@ -30,8 +30,8 @@ return {
 
   ['@type'] = { fg = pallet.grey },
 
-  ['@function.builtin'] = { fg = pallet.dark_green },
-  ['@constructor'] = { fg = pallet.dark_green },
+  ['@function.builtin'] = { fg = pallet.blue },
+  ['@constructor'] = { fg = pallet.blue },
 
   ['@keyword'] = { fg = pallet.yellow },
   ['@repeat'] = { fg = pallet.yellow },
