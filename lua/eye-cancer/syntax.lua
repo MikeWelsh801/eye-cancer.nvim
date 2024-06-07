@@ -34,6 +34,7 @@ return {
   ['@constructor'] = { fg = pallet.blue },
 
   ['@keyword'] = { fg = pallet.yellow },
+  ['@keyword.exception'] = { fg = pallet.yellow },
   ['@repeat'] = { fg = pallet.yellow },
   ['@include'] = { fg = pallet.yellow },
   ['@storageclass'] = { fg = pallet.yellow },
