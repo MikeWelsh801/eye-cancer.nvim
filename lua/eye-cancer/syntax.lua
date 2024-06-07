@@ -29,6 +29,7 @@ return {
   ['@string.escape'] = { fg = pallet.brown, },
 
   ['@type'] = { fg = pallet.grey },
+  ['@type.builtin'] = { fg = pallet.grey },
 
   ['@function.builtin'] = { fg = pallet.blue },
   ['@constructor'] = { fg = pallet.blue },
