@@ -1,3 +1,4 @@
+
 require("kanagawa").setup({
   colors = {
     theme = {
@@ -31,49 +32,50 @@ require("kanagawa").setup({
       MasonNormal = { bg = theme.ui.bg_m1, fg = theme.ui.fg_dim },
 
       TelescopeTitle = { fg = theme.ui.special, bold = true },
-      TelescopePromptNormal = { bg = theme.ui.bg_p1 },
-      TelescopePromptBorder = { fg = theme.ui.bg_m1, bg = theme.ui.bg_p1 },
+      TelescopePromptNormal = { bg = "none", fg = "none" },
+      TelescopePromptBorder = { fg = theme.ui.bg_m1, bg = "none" },
       TelescopeResultsNormal = { fg = theme.ui.fg_dim },
-      TelescopeResultsBorder = { fg = theme.ui.bg_m3 },
+      TelescopeResultsBorder = { fg = theme.ui.bg_m1 },
       TelescopePreviewNormal = { bg = "none" },
-      TelescopePreviewBorder = { bg = "none", fg = theme.ui.bg_m3 },
+      TelescopePreviewBorder = { bg = "none", fg = theme.ui.bg_m1 },
     }
   end,
 })
 
 -- colors
-function ColorMyPencils(color)
+function SetBackground(color)
   color = color or "kanagawa-dragon"
   require('kanagawa').load('dragon')
   vim.cmd.colorschem(color)
 
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  local c = require("eye-cancer.pallet")
 
   -- make all of the side line stuff transparent
   -- vim.cmd("highlight LineNr guibg=None")
   -- vim.cmd("highlight SignColumn guibg=None")
-  vim.cmd("hi Normal guibg=none ctermbg=none")
-  vim.cmd("hi LineNr guibg=none ctermbg=none")
-  vim.cmd("hi Folded guibg=none ctermbg=none")
-  vim.cmd("hi NonText guibg=none ctermbg=none")
-  vim.cmd("hi SpecialKey guibg=none ctermbg=none")
-  vim.cmd("hi VertSplit guibg=none ctermbg=none")
-  vim.cmd("hi SignColumn guibg=none ctermbg=none")
-  vim.cmd("hi EndOfBuffer guibg=none ctermbg=none")
+  vim.cmd("hi Normal guibg=" .. c.bg)
+  vim.cmd("hi LineNr guibg=" .. c.bg)
+  vim.cmd("hi Folded guibg=" .. c.bg)
+  vim.cmd("hi NonText guibg=" .. c.bg)
+  vim.cmd("hi SpecialKey guibg=" .. c.bg)
+  vim.cmd("hi VertSplit guibg=" .. c.bg)
+  vim.cmd("hi SignColumn guibg=" .. c.bg)
+  vim.cmd("hi EndOfBuffer guibg=" .. c.bg)
 
-  -- vim.cmd("highlight CursorLineNr guibg=None")
-  vim.cmd("highlight GitSignsAdd guibg=None")
-  vim.cmd("highlight GitSignsChange guibg=None")
-  vim.cmd("highlight GitSignsDelete guibg=None")
+  vim.cmd("highlight CursorLineNr guibg=" .. c.bg .. " guifg=" .. c.off_white)
+  vim.cmd("highlight GitSignsAdd guibg=" .. c.bg)
+  vim.cmd("highlight GitSignsChange guibg=" .. c.bg)
+  vim.cmd("highlight GitSignsDelete guibg=" .. c.bg)
 
   -- diagnostic signs
-  vim.cmd("highlight DiagnosticSignError guibg=None")
-  vim.cmd("highlight DiagnosticSignWarn guibg=None")
-  vim.cmd("highlight DiagnosticSignHint guibg=None")
+  vim.cmd("highlight DiagnosticSignError guibg=" .. c.bg)
+  vim.cmd("highlight DiagnosticSignWarn guibg=" .. c.bg)
+  vim.cmd("highlight DiagnosticSignHint guibg=" .. c.bg)
 
   -- status bar
-  vim.cmd("highlight StatusLine guibg=#1F2223")
-  vim.cmd("highlight StatusLine guifg=#6f6666")
-  vim.cmd("highlight ElInsert guifg=#af6666")
+  vim.cmd("highlight StatusLine guibg=" .. c.dark_bg)
+  vim.cmd("highlight StatusLine guifg=" .. c.dark_grey)
+  vim.cmd("highlight ElInsert guifg=" .. c.red)
 end

@@ -16,7 +16,7 @@ end
 function M.setup()
   vim.cmd("set background=dark")
   require('eye-cancer.kana_setup')
-  ColorMyPencils()
+  SetBackground()
   for key, value in pairs(groups) do
     highlight(key, value)
   end

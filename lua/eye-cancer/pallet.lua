@@ -8,4 +8,8 @@ return {
   grey = '#949590',
   dark_grey = '#646560',
   blue = '#659099',
+  red = '#af6666',
+  sand = '#d2b48e',
+  bg = '#152528',
+  dark_bg = '#1F2223',
 }

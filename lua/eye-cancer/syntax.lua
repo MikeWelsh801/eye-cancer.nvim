@@ -5,6 +5,7 @@ return {
   String = { fg = pallet.dark_green, gui = 'bold,italic' },
   Character = { fg = pallet.dark_green, gui = 'bold,italic' },
   Keyword = { fg = pallet.yellow, gui = 'bold,italic' },
+  Structure = {fg = pallet.grey },
   Function = { fg = pallet.blue, },
   Literal = { fg = pallet.grey, },
   Operator = { fg = pallet.grey, },
@@ -13,6 +14,28 @@ return {
   Field = { fg = pallet.grey, },
   Number = { fg = pallet.brown, },
   Boolean = { fg = pallet.brown, },
+
+  -- Normal = { bg = pallet.bg, fg = pallet.white },
+  -- Folded = { bg = pallet.bg, fg = pallet.white },
+  -- LineNr = { bg = pallet.bg, fg = pallet.dark_grey },
+  -- NonText = { bg = pallet.bg, fg = pallet.blue },
+  -- SpecialKey = { bg = pallet.bg, fg = pallet.white },
+  -- VertSplit = { bg = pallet.bg },
+  -- SignColumn = { bg = pallet.bg, fg = pallet.yellow },
+  -- EndOfBuffer = { bg = pallet.bg, fg = pallet.dark_bg },
+  --
+  -- GitSignsAdd = { bg = pallet.bg, fg = pallet.green },
+  -- GitSignsChange = { bg = pallet.bg, fg = pallet.yellow },
+  -- GitSignsDelete = { bg = pallet.bg, fg = pallet.red },
+  --
+  -- -- diagnostic signs
+  -- DiagnosticSignError = { bg = pallet.bg, fg = pallet.red },
+  -- DiagnosticSignWarn = { bg = pallet.bg, fg = pallet.yellow },
+  -- DiagnosticSignHint = { bg = pallet.bg, fg = pallet.green },
+  --
+  -- -- status bar
+  -- StatusLine = { bg = pallet.dark_bg, fg = pallet.dark_grey },
+  -- ElInsert = { fg = pallet.red },
 
   ['@variable'] = { fg = pallet.white },
   ['@comment'] = { fg = pallet.green, gui = 'bold,italic' },
