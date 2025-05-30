@@ -5,7 +5,7 @@ return {
   String = { fg = pallet.dark_green, gui = 'bold,italic' },
   Character = { fg = pallet.dark_green, gui = 'bold,italic' },
   Keyword = { fg = pallet.yellow, gui = 'bold,italic' },
-  Structure = {fg = pallet.grey },
+  Structure = { fg = pallet.grey },
   Function = { fg = pallet.blue, },
   Literal = { fg = pallet.grey, },
   Operator = { fg = pallet.grey, },
@@ -39,6 +39,16 @@ return {
 
   ['@variable'] = { fg = pallet.white },
   ['@comment'] = { fg = pallet.green, gui = 'bold,italic' },
+  ['@lsp.type.comment'] = { fg = pallet.green, gui = 'bold,italic' },
+
+  -- this is for the new lsp builtin stuff
+  ['@lsp.type.const'] = { fg = pallet.grey },
+  ['@lsp.mod.readonly'] = { fg = pallet.off_white },
+  ['@lsp.typemod.variable.static'] = { fg = pallet.off_white },
+  ['@lsp.typemod.variable.global'] = { fg = pallet.off_white },
+  ['@lsp.type.macro'] = { fg = pallet.off_white },
+  ['@lsp.type.property'] = { fg = pallet.off_white },
+  ['@lsp.typemod.variable.defaultLibrary'] = { fg = pallet.white },
 
   ['@variable.member'] = { fg = pallet.off_white },
   ['@variable.builtin'] = { fg = pallet.off_white },
