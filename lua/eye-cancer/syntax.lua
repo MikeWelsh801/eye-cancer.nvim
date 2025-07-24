@@ -5,6 +5,7 @@ return {
   String = { fg = pallet.dark_green, gui = 'bold,italic' },
   Character = { fg = pallet.dark_green, gui = 'bold,italic' },
   Keyword = { fg = pallet.yellow, gui = 'bold,italic' },
+  Special = { fg = pallet.blue },
   Structure = { fg = pallet.grey },
   Function = { fg = pallet.blue, },
   Literal = { fg = pallet.grey, },
@@ -37,7 +38,7 @@ return {
   -- StatusLine = { bg = pallet.dark_bg, fg = pallet.dark_grey },
   -- ElInsert = { fg = pallet.red },
 
-  ['@variable'] = { fg = pallet.white },
+  ['@variable'] = { fg = pallet.off_white },
   ['@comment'] = { fg = pallet.green, gui = 'bold,italic' },
   ['@lsp.type.comment'] = { fg = pallet.green, gui = 'bold,italic' },
 
@@ -46,6 +47,7 @@ return {
   ['@lsp.mod.readonly'] = { fg = pallet.off_white },
   ['@lsp.typemod.variable.static'] = { fg = pallet.off_white },
   ['@lsp.typemod.variable.global'] = { fg = pallet.off_white },
+  ['@lsp.typemod.function.readonly'] = { fg = pallet.blue, gui = 'bold' },
   ['@lsp.type.macro'] = { fg = pallet.off_white },
   ['@lsp.type.property'] = { fg = pallet.off_white },
   ['@lsp.typemod.variable.defaultLibrary'] = { fg = pallet.white },
