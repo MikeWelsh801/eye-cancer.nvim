@@ -1,1 +1,1 @@
-lua require('eye-cancer').setup()
+lua require('eye-cancer').setup({brighten = false})
